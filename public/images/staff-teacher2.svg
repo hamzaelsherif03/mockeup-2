@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#8B6F5A"/>
+  
+  <!-- Face -->
+  <circle cx="100" cy="85" r="45" fill="#F2C2A1"/>
+  
+  <!-- Hair -->
+  <path d="M55 68 Q100 25 145 68 Q140 50 100 45 Q60 50 55 68" fill="#B8860B"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="75" r="3" fill="#2C1810"/>
+  <circle cx="115" cy="75" r="3" fill="#2C1810"/>
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="85" rx="2" ry="3" fill="#E8A87C"/>
+  
+  <!-- Smile -->
+  <path d="M90 95 Q100 105 110 95" stroke="#2C1810" stroke-width="2" fill="none"/>
+  
+  <!-- Body -->
+  <rect x="75" y="130" width="50" height="70" fill="#D2543B" rx="10"/>
+  
+  <!-- Name badge -->
+  <rect x="110" y="140" width="30" height="15" fill="#FEFBF6" rx="3"/>
+  <text x="125" y="150" text-anchor="middle" fill="#D2543B" font-size="6">LISA</text>
+</svg>

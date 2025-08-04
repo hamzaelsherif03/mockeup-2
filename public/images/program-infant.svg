@@ -1,0 +1,53 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#FEFBF6"/>
+  
+  <!-- Room floor -->
+  <rect x="0" y="240" width="400" height="60" fill="#E8D5C4"/>
+  
+  <!-- Wall -->
+  <rect x="0" y="0" width="400" height="240" fill="#F5F0E8"/>
+  
+  <!-- Window -->
+  <rect x="280" y="40" width="100" height="80" fill="#87CEEB" stroke="#8A9C78" stroke-width="3"/>
+  <line x1="330" y1="40" x2="330" y2="120" stroke="#8A9C78" stroke-width="2"/>
+  <line x1="280" y1="80" x2="380" y2="80" stroke="#8A9C78" stroke-width="2"/>
+  
+  <!-- Crib -->
+  <rect x="50" y="160" width="80" height="50" fill="#D2B48C" stroke="#8B4513" stroke-width="2"/>
+  <!-- Crib rails -->
+  <line x1="60" y1="160" x2="60" y2="140" stroke="#8B4513" stroke-width="3"/>
+  <line x1="75" y1="160" x2="75" y2="140" stroke="#8B4513" stroke-width="3"/>
+  <line x1="90" y1="160" x2="90" y2="140" stroke="#8B4513" stroke-width="3"/>
+  <line x1="105" y1="160" x2="105" y2="140" stroke="#8B4513" stroke-width="3"/>
+  <line x1="120" y1="160" x2="120" y2="140" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Changing station -->
+  <rect x="180" y="180" width="60" height="30" fill="#8A9C78"/>
+  <rect x="175" y="175" width="70" height="40" fill="none" stroke="#355E3B" stroke-width="2"/>
+  
+  <!-- Soft play mat -->
+  <ellipse cx="300" cy="200" rx="60" ry="40" fill="#D2543B" opacity="0.7"/>
+  
+  <!-- Toys -->
+  <circle cx="280" cy="190" r="8" fill="#FFD700"/>
+  <circle cx="320" cy="210" r="6" fill="#FF6B6B"/>
+  <rect x="295" y="185" width="10" height="10" fill="#4ECDC4"/>
+  
+  <!-- Mobile above crib -->
+  <line x1="90" y1="100" x2="90" y2="120" stroke="#8A9C78" stroke-width="2"/>
+  <circle cx="80" cy="130" r="4" fill="#FFD700"/>
+  <circle cx="100" cy="130" r="4" fill="#FF6B6B"/>
+  <circle cx="90" cy="125" r="4" fill="#4ECDC4"/>
+  
+  <!-- Wall decorations -->
+  <circle cx="200" cy="80" r="15" fill="#F4A261"/>
+  <text x="200" y="85" text-anchor="middle" fill="white" font-size="12" font-family="sans-serif">ABC</text>
+  
+  <!-- Feeding chair -->
+  <rect x="320" y="180" width="30" height="25" fill="#8A9C78"/>
+  <rect x="325" y="160" width="20" height="20" fill="#8A9C78"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#355E3B" font-size="18" font-weight="bold" font-family="serif">Infant Care (6 weeks - 18 months)</text>
+</svg>

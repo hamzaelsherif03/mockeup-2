@@ -1,0 +1,55 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#FEFBF6"/>
+  
+  <!-- Room floor -->
+  <rect x="0" y="240" width="400" height="60" fill="#E8D5C4"/>
+  
+  <!-- Wall -->
+  <rect x="0" y="0" width="400" height="240" fill="#F5F0E8"/>
+  
+  <!-- Window -->
+  <rect x="300" y="40" width="80" height="70" fill="#87CEEB" stroke="#8A9C78" stroke-width="3"/>
+  <line x1="340" y1="40" x2="340" y2="110" stroke="#8A9C78" stroke-width="2"/>
+  
+  <!-- Small table -->
+  <ellipse cx="120" cy="200" rx="40" ry="25" fill="#D2B48C"/>
+  <!-- Small chairs -->
+  <rect x="90" y="180" width="15" height="20" fill="#D2543B"/>
+  <rect x="130" y="180" width="15" height="20" fill="#8A9C78"/>
+  
+  <!-- Toy bins -->
+  <rect x="60" y="190" width="30" height="25" fill="#4ECDC4" rx="5"/>
+  <rect x="280" y="190" width="30" height="25" fill="#FFD700" rx="5"/>
+  
+  <!-- Play kitchen -->
+  <rect x="200" y="160" width="50" height="50" fill="#F4A261"/>
+  <rect x="205" y="165" width="15" height="15" fill="#333" rx="2"/>
+  <rect x="225" y="165" width="15" height="15" fill="#333" rx="2"/>
+  <circle cx="212" cy="172" r="3" fill="#FF6B6B"/>
+  <circle cx="232" cy="172" r="3" fill="#FF6B6B"/>
+  
+  <!-- Reading corner -->
+  <path d="M320 180 Q350 170 370 190 Q360 210 330 200 Z" fill="#D2543B"/>
+  <!-- Books -->
+  <rect x="340" y="185" width="8" height="12" fill="#4ECDC4"/>
+  <rect x="350" y="185" width="8" height="12" fill="#FFD700"/>
+  
+  <!-- Art easel -->
+  <line x1="80" y1="120" x2="80" y2="180" stroke="#8B4513" stroke-width="4"/>
+  <line x1="120" y1="120" x2="120" y2="180" stroke="#8B4513" stroke-width="4"/>
+  <line x1="70" y1="140" x2="130" y2="140" stroke="#8B4513" stroke-width="3"/>
+  <rect x="75" y="130" width="50" height="30" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Wall alphabet -->
+  <text x="50" y="80" fill="#355E3B" font-size="14" font-weight="bold" font-family="sans-serif">A B C</text>
+  <text x="150" y="80" fill="#D2543B" font-size="14" font-weight="bold" font-family="sans-serif">1 2 3</text>
+  
+  <!-- Colorful blocks on floor -->
+  <rect x="160" y="220" width="12" height="12" fill="#FF6B6B"/>
+  <rect x="175" y="220" width="12" height="12" fill="#4ECDC4"/>
+  <rect x="190" y="220" width="12" height="12" fill="#FFD700"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#355E3B" font-size="18" font-weight="bold" font-family="serif">Toddler Program (18 months - 3 years)</text>
+</svg>

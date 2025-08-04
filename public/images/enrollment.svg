@@ -1,0 +1,130 @@
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="400" fill="#FEFBF6"/>
+  
+  <!-- Desk surface -->
+  <rect x="50" y="200" width="400" height="150" fill="#D2B48C"/>
+  
+  <!-- Desk front -->
+  <rect x="50" y="350" width="400" height="30" fill="#8B4513"/>
+  
+  <!-- Papers/documents -->
+  <rect x="100" y="180" width="120" height="140" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="105" y="185" width="110" height="8" fill="#355E3B"/>
+  <text x="160" y="202" text-anchor="middle" fill="#355E3B" font-size="12" font-weight="bold">Enrollment Form</text>
+  
+  <!-- Form lines -->
+  <line x1="110" y1="220" x2="210" y2="220" stroke="#ccc" stroke-width="1"/>
+  <line x1="110" y1="235" x2="190" y2="235" stroke="#ccc" stroke-width="1"/>
+  <line x1="110" y1="250" x2="205" y2="250" stroke="#ccc" stroke-width="1"/>
+  <line x1="110" y1="265" x2="185" y2="265" stroke="#ccc" stroke-width="1"/>
+  <line x1="110" y1="280" x2="200" y2="280" stroke="#ccc" stroke-width="1"/>
+  <line x1="110" y1="295" x2="175" y2="295" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- Checkboxes -->
+  <rect x="110" y="225" width="8" height="8" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="110" y="240" width="8" height="8" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="110" y="255" width="8" height="8" fill="none" stroke="#333" stroke-width="1"/>
+  <!-- Checked box -->
+  <rect x="110" y="270" width="8" height="8" fill="none" stroke="#333" stroke-width="1"/>
+  <path d="M112 274 L114 276 L117 272" stroke="#4ECDC4" stroke-width="2" fill="none"/>
+  
+  <!-- Second document -->
+  <rect x="280" y="190" width="120" height="130" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="285" y="195" width="110" height="8" fill="#D2543B"/>
+  <text x="340" y="212" text-anchor="middle" fill="#D2543B" font-size="12" font-weight="bold">Medical Records</text>
+  
+  <!-- Medical form content -->
+  <circle cx="300" cy="240" r="3" fill="#FF6B6B"/>
+  <text x="310" y="245" fill="#333" font-size="8">Immunizations ✓</text>
+  <circle cx="300" cy="255" r="3" fill="#FF6B6B"/>
+  <text x="310" y="260" fill="#333" font-size="8">Physical Exam ✓</text>
+  <circle cx="300" cy="270" r="3" fill="#FFD700"/>
+  <text x="310" y="275" fill="#333" font-size="8">Emergency Contacts</text>
+  
+  <!-- Pen -->
+  <rect x="240" y="250" width="3" height="40" fill="#4169E1"/>
+  <circle cx="241.5" cy="245" r="2" fill="#333"/>
+  
+  <!-- Clipboard -->
+  <rect x="320" y="250" width="60" height="80" fill="#8B4513"/>
+  <rect x="325" y="255" width="50" height="70" fill="white"/>
+  <rect x="345" y="245" width="10" height="15" fill="#333"/>
+  <text x="350" y="275" text-anchor="middle" fill="#355E3B" font-size="8" font-weight="bold">Checklist</text>
+  <rect x="330" y="285" width="6" height="6" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="330" y="295" width="6" height="6" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="330" y="305" width="6" height="6" fill="none" stroke="#333" stroke-width="1"/>
+  
+  <!-- Books/binders -->
+  <rect x="60" y="160" width="15" height="60" fill="#8A9C78"/>
+  <rect x="75" y="160" width="15" height="60" fill="#D2543B"/>
+  <text x="82" y="175" text-anchor="middle" fill="white" font-size="6" font-weight="bold" transform="rotate(-90 82 175)">POLICIES</text>
+  
+  <!-- Computer/tablet -->
+  <rect x="400" y="220" width="80" height="50" fill="#333"/>
+  <rect x="405" y="225" width="70" height="40" fill="#87CEEB"/>
+  <text x="440" y="245" text-anchor="middle" fill="#355E3B" font-size="8" font-weight="bold">Online Portal</text>
+  
+  <!-- Coffee cup -->
+  <ellipse cx="150" cy="240" rx="8" ry="6" fill="#8B4513"/>
+  <ellipse cx="150" cy="238" rx="8" ry="4" fill="#D2691E"/>
+  <rect x="158" y="235" width="3" height="8" fill="#8B4513"/>
+  
+  <!-- Plant -->
+  <ellipse cx="70" cy="300" rx="8" ry="15" fill="#228B22"/>
+  <rect x="67" y="310" width="6" height="15" fill="#8B4513"/>
+  
+  <!-- Calendar -->
+  <rect x="420" y="160" width="60" height="50" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="420" y="160" width="60" height="15" fill="#D2543B"/>
+  <text x="450" y="172" text-anchor="middle" fill="white" font-size="8" font-weight="bold">MARCH</text>
+  <!-- Calendar grid -->
+  <line x1="435" y1="175" x2="435" y2="210" stroke="#ccc" stroke-width="1"/>
+  <line x1="450" y1="175" x2="450" y2="210" stroke="#ccc" stroke-width="1"/>
+  <line x1="465" y1="175" x2="465" y2="210" stroke="#ccc" stroke-width="1"/>
+  <line x1="420" y1="185" x2="480" y2="185" stroke="#ccc" stroke-width="1"/>
+  <line x1="420" y1="195" x2="480" y2="195" stroke="#ccc" stroke-width="1"/>
+  <line x1="420" y1="205" x2="480" y2="205" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- Highlighted date -->
+  <circle cx="442" cy="190" r="5" fill="#FFD700" opacity="0.7"/>
+  <text x="442" y="194" text-anchor="middle" fill="#333" font-size="6" font-weight="bold">15</text>
+  
+  <!-- Family photo -->
+  <rect x="350" y="300" width="40" height="30" fill="white" stroke="#333" stroke-width="2"/>
+  <circle cx="360" cy="315" r="4" fill="#F4A261"/>
+  <circle cx="375" cy="315" r="4" fill="#8A9C78"/>
+  <circle cx="367" cy="325" r="3" fill="#D2543B"/>
+  
+  <!-- Stamps/stickers -->
+  <circle cx="250" cy="300" r="8" fill="#4ECDC4"/>
+  <text x="250" y="305" text-anchor="middle" fill="white" font-size="8" font-weight="bold">OK</text>
+  
+  <rect x="270" y="295" width="15" height="10" fill="#FFD700" transform="rotate(15 277.5 300)"/>
+  <text x="277" y="302" text-anchor="middle" fill="#333" font-size="6" font-weight="bold">PAID</text>
+  
+  <!-- Welcome packet -->
+  <rect x="120" y="320" width="80" height="40" fill="#8A9C78" opacity="0.8"/>
+  <text x="160" y="340" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Welcome Packet</text>
+  <text x="160" y="350" text-anchor="middle" fill="white" font-size="6">Parent Handbook</text>
+  
+  <!-- Title area -->
+  <rect x="100" y="50" width="300" height="80" fill="#F5F0E8" stroke="#8A9C78" stroke-width="3"/>
+  <text x="250" y="80" text-anchor="middle" fill="#355E3B" font-size="18" font-weight="bold" font-family="serif">Enrollment Process</text>
+  <text x="250" y="100" text-anchor="middle" fill="#D2543B" font-size="12">Simple Steps to Join Our Family</text>
+  <text x="250" y="115" text-anchor="middle" fill="#8A9C78" font-size="10">Complete forms • Schedule tour • Start date</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="80" r="15" fill="#F4A261" opacity="0.3"/>
+  <circle cx="420" cy="90" r="12" fill="#4ECDC4" opacity="0.3"/>
+  
+  <!-- Arrow showing process flow -->
+  <path d="M200 300 Q230 290 260 300" stroke="#D2543B" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D2543B"/>
+    </marker>
+  </defs>
+</svg>

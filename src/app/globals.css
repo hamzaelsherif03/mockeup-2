@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 1rem;
+  
+  /* Nursery Brand Colors - Mocha Mousse Theme (WCAG AA Compliant) */
+  --mocha-mousse: 28 39% 45%;     /* #8B6F5A - Darker primary for better contrast */
+  --forest-green: 128 33% 29%;    /* #355E3B - Deep forest green (already compliant) */
+  --sage-green: 91 28% 55%;       /* #8A9C78 - Slightly darker sage green */
+  --terracotta: 12 65% 50%;       /* #D2543B - Darker terracotta for better contrast */
+  --warm-white: 45 67% 98%;       /* #FEFBF6 - Warm white */
+  --soft-gray: 60 14% 96%;        /* #F5F5F0 - Soft gray */
+  --unexpected-red: 357 76% 45%;  /* #B92D29 - Darker red for better contrast */
+  
+  /* Font variables for compatibility */
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+
+  /* Base color system using brand colors */
+  --background: 45 67% 98%;        /* #FEFBF6 - Warm white */
+  --foreground: 28 39% 45%;        /* #8B6F5A - Mocha Mousse */
+  
+  --card: 45 67% 98%;              /* #FEFBF6 - Warm white */
+  --card-foreground: 28 39% 45%;   /* #8B6F5A - Mocha Mousse */
+  
+  --popover: 45 67% 98%;           /* #FEFBF6 - Warm white */
+  --popover-foreground: 28 39% 45%; /* #8B6F5A - Mocha Mousse */
+  
+  --primary: 28 39% 45%;           /* #8B6F5A - Mocha Mousse */
+  --primary-foreground: 45 67% 98%; /* #FEFBF6 - Warm white */
+  
+  --secondary: 91 28% 55%;         /* #8A9C78 - Sage green */
+  --secondary-foreground: 128 33% 29%; /* #355E3B - Forest green */
+  
+  --muted: 60 14% 96%;             /* #F5F5F0 - Soft gray */
+  --muted-foreground: 128 33% 29%; /* #355E3B - Forest green */
+  
+  --accent: 12 65% 50%;            /* #D2543B - Terracotta */
+  --accent-foreground: 45 67% 98%; /* #FEFBF6 - Warm white */
+  
+  --destructive: 357 76% 45%;      /* #B92D29 - Red */
+  --destructive-foreground: 45 67% 98%; /* #FEFBF6 - Warm white */
+  
+  --border: 60 14% 96%;            /* #F5F5F0 - Soft gray */
+  --input: 60 14% 92%;             /* Slightly darker for input fields */
+  --ring: 28 39% 45%;              /* #8B6F5A - Mocha Mousse */
+  
+  /* Chart colors using nursery palette */
+  --chart-1: 28 39% 45%;           /* #8B6F5A - Mocha Mousse */
+  --chart-2: 128 33% 29%;          /* #355E3B - Forest green */
+  --chart-3: 91 28% 55%;           /* #8A9C78 - Sage green */
+  --chart-4: 12 65% 50%;           /* #D2543B - Terracotta */
+  --chart-5: 357 76% 45%;          /* #B92D29 - Red */
+  
+  /* Sidebar colors */
+  --sidebar: 45 67% 98%;           /* #FEFBF6 - Warm white */
+  --sidebar-foreground: 28 39% 45%; /* #8B6F5A - Mocha Mousse */
+  --sidebar-primary: 128 33% 29%;  /* #355E3B - Forest green */
+  --sidebar-primary-foreground: 45 67% 98%; /* #FEFBF6 - Warm white */
+  --sidebar-accent: 91 28% 55%;    /* #8A9C78 - Sage green */
+  --sidebar-accent-foreground: 128 33% 29%; /* #355E3B - Forest green */
+  --sidebar-border: 60 14% 96%;    /* #F5F5F0 - Soft gray */
+  --sidebar-ring: 28 39% 45%;      /* #8B6F5A - Mocha Mousse */
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* RedirectErrorBoundary positioning */
+.absolute.-bottom-4.-left-4 {
+  right: 1rem;
+  left: auto;
+  bottom: -6rem;
+}
+
+@layer base {
+  * {
+    @apply border-[hsl(60_14%_96%_/_0.5)] outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Typography improvements for nursery content */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), Georgia, serif;
+    @apply font-semibold tracking-tight text-foreground;
+    line-height: 1.2;
+  }
+  
+  h1 { 
+    @apply text-4xl md:text-5xl lg:text-6xl;
+    font-weight: 700;
+  }
+  h2 { 
+    @apply text-3xl md:text-4xl lg:text-5xl;
+    font-weight: 600;
+  }
+  h3 { 
+    @apply text-2xl md:text-3xl;
+    font-weight: 600;
+  }
+  h4 { 
+    @apply text-xl md:text-2xl;
+    font-weight: 500;
+  }
+  
+  p {
+    @apply leading-relaxed text-muted-foreground;
+    line-height: 1.6;
+  }
+  
+  /* Nursery-specific utilities */
+  .nursery-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .nursery-section {
+    @apply py-16 md:py-24;
+  }
+  
+  .nursery-card {
+    @apply bg-card rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .nursery-button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl px-6 py-3 font-medium transition-colors;
+  }
+  
+  .nursery-button-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-xl px-6 py-3 font-medium transition-colors;
+  }
+}
