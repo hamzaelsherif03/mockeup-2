@@ -72,7 +72,7 @@ export function ContactModal({ isOpen, onClose, triggerSource }: ContactModalPro
                 transition={POPUP_TRANSITION}
                 className={ACTIVE_POSITION.className}
               >
-                <div className="w-full max-w-md mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-border">
+                <div className="w-full max-w-[95vw] sm:max-w-md mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-border max-h-[90vh] overflow-y-auto">
                   {/* Header */}
                   <div className="bg-gradient-to-r from-primary to-accent p-4 text-white relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>

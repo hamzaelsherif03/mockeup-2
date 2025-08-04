@@ -12,7 +12,7 @@ export const POPUP_POSITIONS = {
 
   // Center (traditional modal)
   CENTER: {
-    className: "fixed inset-0 flex items-center justify-center p-4 z-50",
+    className: "fixed inset-0 flex items-center justify-center p-4 z-50 w-full h-full",
     initial: { opacity: 0, scale: 0.95 },
     animate: { opacity: 1, scale: 1 },
     exit: { opacity: 0, scale: 0.95 }
