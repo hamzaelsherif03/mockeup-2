@@ -64,7 +64,9 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-serif font-bold text-primary">
-              Little Sprouts
+              <a href="/" className="hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded px-2 py-1">
+                Little Sprouts
+              </a>
             </h1>
           </div>
 
