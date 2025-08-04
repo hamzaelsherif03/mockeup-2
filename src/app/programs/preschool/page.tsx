@@ -667,10 +667,10 @@ export default function PreschoolProgramPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">
                 Experience Our Preschool Program
               </h2>
-              <p className="text-lg opacity-90 mb-8">
+              <p className="text-lg text-white/80 mb-8">
                 Come see our dynamic preschool classrooms in action! Observe our engaging 
                 learning centers, meet our dedicated teachers, and discover how we prepare 
                 children for kindergarten success through joyful, meaningful experiences.
@@ -708,10 +708,10 @@ export default function PreschoolProgramPage() {
             >
               <Card className="bg-primary-foreground/10 border-primary-foreground/20">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-4 text-primary-foreground">
+                  <h3 className="text-xl font-semibold mb-4 text-white">
                     Schedule Your Preschool Tour
                   </h3>
-                  <p className="text-primary-foreground/80 mb-6">
+                  <p className="text-white/80 mb-6">
                     Watch our preschoolers engage in hands-on learning, participate in 
                     circle time, and prepare for their bright academic future.
                   </p>

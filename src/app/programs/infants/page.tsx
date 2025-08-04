@@ -470,10 +470,10 @@ export default function InfantProgramPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">
                 Ready to Visit Our Infant Program?
               </h2>
-              <p className="text-lg opacity-90 mb-8">
+              <p className="text-lg text-white/80 mb-8">
                 We'd love to show you our peaceful infant environment and introduce you to 
                 our caring specialists. Schedule a personalized tour to see how we can 
                 support your baby's growth and development.
@@ -511,10 +511,10 @@ export default function InfantProgramPage() {
             >
               <Card className="bg-primary-foreground/10 border-primary-foreground/20">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-4 text-primary-foreground">
+                  <h3 className="text-xl font-semibold mb-4 text-white">
                     Schedule Your Infant Tour
                   </h3>
-                  <p className="text-primary-foreground/80 mb-6">
+                  <p className="text-white/80 mb-6">
                     See our infant spaces, meet our specialists, and learn about our 
                     individualized approach to baby care.
                   </p>

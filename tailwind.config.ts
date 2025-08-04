@@ -7,6 +7,10 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    safelist: [
+      'text-white',
+      'text-white/80',
+    ],
     extend: {
       colors: {
         background: 'hsl(var(--background))',

@@ -103,7 +103,7 @@ export function AboutHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="absolute -bottom-4 -right-4 bg-accent text-white p-4 rounded-2xl shadow-lg max-w-xs"
+              className="absolute -bottom-16 -right-3 bg-accent text-white p-4 rounded-2xl shadow-lg max-w-xs"
             >
               <div className="flex items-center gap-2 mb-2">
                 <Star className="h-4 w-4 fill-current" />

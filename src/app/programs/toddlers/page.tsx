@@ -542,10 +542,10 @@ export default function ToddlerProgramPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">
                 Ready to Explore Our Toddler Program?
               </h2>
-              <p className="text-lg opacity-90 mb-8">
+              <p className="text-lg text-white/80 mb-8">
                 Come see our engaging toddler environment in action! Watch how we balance 
                 structure and freedom, support growing independence, and celebrate each 
                 child&apos;s unique personality and learning style.
@@ -583,10 +583,10 @@ export default function ToddlerProgramPage() {
             >
               <Card className="bg-primary-foreground/10 border-primary-foreground/20">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-4 text-primary-foreground">
+                  <h3 className="text-xl font-semibold mb-4 text-white">
                     Schedule Your Toddler Tour
                   </h3>
-                  <p className="text-primary-foreground/80 mb-6">
+                  <p className="text-white/80 mb-6">
                     Experience our toddler program firsthand. See our learning centers, 
                     meet our caring teachers, and discover how we make learning fun!
                   </p>

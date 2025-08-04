@@ -798,10 +798,10 @@ export default function PreKProgramPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">
                 Secure Your Child&apos;s Academic Future
               </h2>
-              <p className="text-lg opacity-90 mb-8">
+              <p className="text-lg text-white/80 mb-8">
                 Give your child the strongest possible start to their academic journey. 
                 Our Pre-K program doesn&apos;t just prepare children for kindergarten—it 
                 launches them toward a lifetime of educational success and confidence.
@@ -839,10 +839,10 @@ export default function PreKProgramPage() {
             >
               <Card className="bg-primary-foreground/10 border-primary-foreground/20">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-4 text-primary-foreground">
+                  <h3 className="text-xl font-semibold mb-4 text-white">
                     Schedule Your Pre-K Tour
                   </h3>
-                  <p className="text-primary-foreground/80 mb-6">
+                  <p className="text-white/80 mb-6">
                     See our advanced learning environment, meet our expert teachers, 
                     and discover how we prepare children for academic excellence.
                   </p>
