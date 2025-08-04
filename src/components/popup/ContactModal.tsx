@@ -82,7 +82,7 @@ export function ContactModal({ isOpen, onClose, triggerSource }: ContactModalPro
                           <Sparkles className="h-4 w-4" />
                         </div>
                         <div>
-                          <h2 className="font-serif font-bold text-lg">Little Sprouts</h2>
+                          <h2 className="font-serif font-bold text-lg text-white">Little Sprouts</h2>
                           <p className="text-white/90 text-xs">Where Little Minds Grow Big Dreams</p>
                         </div>
                       </div>
