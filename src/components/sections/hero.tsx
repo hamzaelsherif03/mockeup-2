@@ -88,11 +88,11 @@ export function HeroSection() {
             {/* Main hero card with image */}
             <Card className="bg-card/80 backdrop-blur">
               <CardContent className="p-8">
-                <div className="aspect-video rounded-2xl mb-6 overflow-hidden">
+                <div className="rounded-2xl mb-6 overflow-hidden">
                   <img 
-                    src="/images/hero-placeholder.svg" 
+                    src="/images/hero.webp" 
                     alt="Little Sprouts Nursery Building" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Your Child's Second Home</h3>
