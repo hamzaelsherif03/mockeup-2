@@ -285,6 +285,17 @@ export function Header() {
                   >
                     Pre-K (4 - 5 years)
                   </a>
+                  <div className="border-t border-border my-2"></div>
+                  <a 
+                    href="/programs" 
+                    className="block text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 bg-muted/50"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <span className="flex items-center justify-between">
+                      <span className="font-semibold">View All Programs</span>
+                      <span className="ml-1 font-bold">→</span>
+                    </span>
+                  </a>
                 </div>
               </div>
               

@@ -1,9 +1,16 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
-import { Phone, Calendar, Eye, Mail } from 'lucide-react'
+import { Phone, Calendar, Eye, Mail, BookOpen } from 'lucide-react'
 
 export function BottomNavigation() {
+  // Use client-side only rendering to avoid hydration errors
+  const [isClient, setIsClient] = useState(false)
+  
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
   const handleCallNow = () => {
     window.location.href = 'tel:+15551234567'
   }
@@ -31,9 +38,14 @@ export function BottomNavigation() {
     }
   }
 
+  const handlePrograms = () => {
+    window.location.href = '/programs'
+  }
+
+  // Only render the updated version on the client to avoid hydration errors
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-t border-border">
-      <div className="grid grid-cols-4 gap-1 p-2">
+      <div className={`grid ${isClient ? 'grid-cols-5' : 'grid-cols-4'} gap-1 p-2`}>
         <Button
           variant="ghost"
           size="sm"
@@ -77,6 +89,19 @@ export function BottomNavigation() {
           <Mail className="h-5 w-5" />
           <span>Contact</span>
         </Button>
+        
+        {isClient && (
+          <Button
+            variant="ghost"
+            size="sm"
+            className="flex flex-col items-center gap-1 h-auto py-2 px-1 text-xs font-medium text-primary bg-muted/50"
+            onClick={handlePrograms}
+            aria-label="View programs"
+          >
+            <BookOpen className="h-5 w-5 text-primary" />
+            <span>Programs</span>
+          </Button>
+        )}
       </div>
     </div>
   )
