@@ -92,7 +92,7 @@ export function HeroSection() {
                   <img 
                     src="/images/hero.webp" 
                     alt="Little Sprouts Nursery Building" 
-                    className="w-full h-auto"
+                    className="w-full h-[450px] object-cover object-[center_40%]" 
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Your Child's Second Home</h3>
