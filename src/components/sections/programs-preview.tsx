@@ -122,7 +122,7 @@ export function ProgramsPreview() {
                       size="sm" 
                       className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                       onClick={() => {
-                        alert(`Learn more about our ${program.title}!\nCall (555) 123-4567 to schedule a tour and see this program in action.`);
+                        window.location.href = `/programs/${program.id.toLowerCase()}`;
                       }}
                     >
                       Learn More
@@ -146,12 +146,7 @@ export function ProgramsPreview() {
             variant="nursery" 
             size="lg"
             onClick={() => {
-              const programsSection = document.getElementById('programs') || document.getElementById('program-details');
-              if (programsSection) {
-                programsSection.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                alert('Call us at (555) 123-4567 to learn more about our programs!');
-              }
+              window.location.href = '/programs';
             }}
           >
             View All Programs

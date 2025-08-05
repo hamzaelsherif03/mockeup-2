@@ -118,7 +118,7 @@ export default function AdmissionsPage() {
       </section>
 
       {/* Enrollment Process */}
-      <section className="nursery-section bg-background">
+      <section id="enrollment-process" className="nursery-section bg-background">
         <div className="nursery-container">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-12">
             Simple Enrollment Process
@@ -161,7 +161,7 @@ export default function AdmissionsPage() {
       </section>
 
       {/* Tuition & Rates */}
-      <section className="nursery-section bg-muted">
+      <section id="tuition-rates" className="nursery-section bg-muted">
         <div className="nursery-container">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-12">
             Tuition & Rates
@@ -248,7 +248,7 @@ export default function AdmissionsPage() {
       </section>
 
       {/* Required Documents */}
-      <section className="nursery-section bg-background">
+      <section id="required-documents" className="nursery-section bg-background">
         <div className="nursery-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>

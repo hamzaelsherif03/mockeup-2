@@ -59,7 +59,9 @@ export function HeroSection() {
                 variant="outline" 
                 size="lg" 
                 className="text-lg"
-                onClick={triggerPopup}
+                onClick={() => {
+                  window.location.href = '/about';
+                }}
               >
                 <Info className="h-5 w-5 mr-2" />
                 Get Information

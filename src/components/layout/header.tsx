@@ -150,33 +150,21 @@ export function Header() {
               </button>
               <div className="absolute top-full left-0 mt-2 w-56 bg-background border border-border rounded-xl shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <a 
-                  href="#" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    alert('Enrollment Process\nStep 1: Schedule a tour\nStep 2: Submit application\nStep 3: Meet with director\nCall (555) 123-4567 to start!');
-                  }}
+                  href="/admissions#enrollment-process" 
                   className="block px-4 py-3 text-foreground hover:bg-muted hover:text-primary transition-colors"
                 >
                   <div className="font-medium">Enrollment Process</div>
                   <div className="text-sm text-muted-foreground">How to apply</div>
                 </a>
                 <a 
-                  href="#" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    alert('Pricing & Fees\nCompetitive rates with flexible payment options\nCall (555) 123-4567 for current pricing.');
-                  }}
+                  href="/admissions#tuition-rates" 
                   className="block px-4 py-3 text-foreground hover:bg-muted hover:text-primary transition-colors"
                 >
                   <div className="font-medium">Pricing & Fees</div>
                   <div className="text-sm text-muted-foreground">Tuition information</div>
                 </a>
                 <a 
-                  href="#" 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    alert('Forms & Documents\nEnrollment forms available at the center\nCall (555) 123-4567 or visit us to get started.');
-                  }}
+                  href="/admissions#required-documents" 
                   className="block px-4 py-3 text-foreground hover:bg-muted hover:text-primary transition-colors"
                 >
                   <div className="font-medium">Forms & Documents</div>
@@ -313,35 +301,23 @@ export function Header() {
                 <div className="text-foreground px-3 py-2 font-medium">Admissions</div>
                 <div className="pl-6 space-y-1">
                   <a 
-                    href="#" 
+                    href="/admissions#enrollment-process" 
                     className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsMenuOpen(false);
-                      alert('Enrollment Process\nStep 1: Schedule a tour\nStep 2: Submit application\nStep 3: Meet with director\nCall (555) 123-4567 to start!');
-                    }}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     Enrollment Process
                   </a>
                   <a 
-                    href="#" 
+                    href="/admissions#tuition-rates" 
                     className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsMenuOpen(false);
-                      alert('Pricing & Fees\nCompetitive rates with flexible payment options\nCall (555) 123-4567 for current pricing.');
-                    }}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     Pricing & Fees
                   </a>
                   <a 
-                    href="#" 
+                    href="/admissions#required-documents" 
                     className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsMenuOpen(false);
-                      alert('Forms & Documents\nEnrollment forms available at the center\nCall (555) 123-4567 or visit us to get started.');
-                    }}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     Forms & Documents
                   </a>
