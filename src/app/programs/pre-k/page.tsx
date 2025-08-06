@@ -306,7 +306,7 @@ export default function PreKProgramPage() {
               <Card className="overflow-hidden">
                 <CardContent className="p-0">
                   <img 
-                    src="/images/program-prek.svg" 
+                    src="/images/prek.webp" 
                     alt="Advanced Pre-K learning environment with kindergarten preparation activities, science experiments, and academic skill development" 
                     className="w-full h-80 object-cover"
                   />

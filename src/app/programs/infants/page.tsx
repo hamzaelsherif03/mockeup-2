@@ -186,7 +186,7 @@ export default function InfantProgramPage() {
               <Card className="overflow-hidden">
                 <CardContent className="p-0">
                   <img 
-                    src="/images/program-infant.svg" 
+                    src="/images/infant.webp "
                     alt="Nurturing infant care environment with comfortable spaces for feeding, sleeping, and gentle play activities" 
                     className="w-full h-80 object-cover"
                   />

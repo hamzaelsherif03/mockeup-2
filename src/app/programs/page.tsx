@@ -16,7 +16,7 @@ const programs = [
     ageRange: '6 weeks - 18 months',
     icon: Baby,
     color: 'bg-pink-100 text-pink-600',
-    image: '/images/program-infant.svg',
+    image: '/images/infant.webp',
     description: 'Nurturing care for your precious little ones in a safe, loving environment.',
     highlights: [
       'Low 1:3 teacher-to-child ratio',
@@ -45,7 +45,7 @@ const programs = [
     ageRange: '18 months - 3 years',
     icon: Blocks,
     color: 'bg-blue-100 text-blue-600',
-    image: '/images/program-toddler.svg',
+    image: '/images/toddler.webp',
     description: 'Encouraging exploration and independence through play-based learning.',
     highlights: [
       '1:5 teacher-to-child ratio',
@@ -76,7 +76,7 @@ const programs = [
     ageRange: '3 - 4 years',
     icon: Palette,
     color: 'bg-green-100 text-green-600',
-    image: '/images/program-preschool.svg',
+    image: '/images/preschool.webp',
     description: 'Building foundations for academic success through hands-on learning.',
     highlights: [
       '1:8 teacher-to-child ratio',
@@ -107,7 +107,7 @@ const programs = [
     ageRange: '4 - 5 years',
     icon: GraduationCap,
     color: 'bg-purple-100 text-purple-600',
-    image: '/images/program-prek.svg',
+    image: '/images/prek.webp',
     description: 'Comprehensive kindergarten readiness program for confident learners.',
     highlights: [
       '1:10 teacher-to-child ratio',

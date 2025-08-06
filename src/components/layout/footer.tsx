@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="nursery-container py-4 sm:py-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:justify-between">
           {/* Company Info */}
           <div className="space-y-2 sm:space-y-3 col-span-2 sm:col-span-1">
             <h3 className="text-lg sm:text-xl font-serif font-bold">Little Sprouts</h3>
@@ -54,19 +54,19 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-2 sm:space-y-3">
-            <h4 className="text-sm sm:text-base font-semibold">Quick Links</h4>
+          <div className="space-y-2 sm:space-y-3 md:justify-self-end md:text-right">
+            <h4 className="text-sm sm:text-base font-semibold md:text-right">Quick Links</h4>
             <div className="space-y-1 sm:space-y-1.5">
-              <a href="/about" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm">
+              <a href="/about" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm md:text-right">
                 About Us
               </a>
-              <a href="/programs" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm">
+              <a href="/programs" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm md:text-right">
                 Our Programs
               </a>
-              <a href="/admissions" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm">
+              <a href="/admissions" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm md:text-right">
                 Admissions
               </a>
-              <a href="/contact" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm">
+              <a href="/contact" className="block text-primary-foreground/80 hover:text-accent transition-colors text-xs sm:text-sm md:text-right">
                 Contact
               </a>
             </div>

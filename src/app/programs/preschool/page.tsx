@@ -252,7 +252,7 @@ export default function PreschoolProgramPage() {
               <Card className="overflow-hidden">
                 <CardContent className="p-0">
                   <img 
-                    src="/images/program-preschool.svg" 
+                    src="/images/preschool.webp" 
                     alt="Engaging preschool classroom with learning centers, group activities, and educational materials for foundation skill building" 
                     className="w-full h-80 object-cover"
                   />

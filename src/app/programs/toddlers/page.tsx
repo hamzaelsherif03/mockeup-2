@@ -220,7 +220,7 @@ export default function ToddlerProgramPage() {
               <Card className="overflow-hidden">
                 <CardContent className="p-0">
                   <img 
-                    src="/images/program-toddler.svg" 
+                    src="/images/toddler.webp" 
                     alt="Active toddler learning environment with play centers, art activities, and group interaction spaces" 
                     className="w-full h-80 object-cover"
                   />
