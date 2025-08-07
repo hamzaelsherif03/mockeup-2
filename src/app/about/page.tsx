@@ -160,7 +160,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-muted rounded-2xl p-8">
               <img 
-                src="/images/facility-interior.svg" 
+                src="/images/about-facility.webp" 
                 alt="Little Sprouts Nursery facility interior showing colorful learning centers" 
                 className="rounded-lg w-full"
               />
