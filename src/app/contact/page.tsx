@@ -313,10 +313,10 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="nursery-section bg-primary text-primary-foreground">
+      <section className="nursery-section bg-[#f5f0e8] text-[#8B5A2B]">
         <div className="nursery-container text-center">
           <h2 className="text-2xl font-bold mb-4">Need Immediate Assistance?</h2>
-          <p className="mb-6 opacity-90">
+          <p className="mb-6">
             For urgent matters during business hours, please call us directly.
           </p>
           <a 

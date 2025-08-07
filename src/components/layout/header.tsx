@@ -7,7 +7,16 @@ import { useKeyboardNavigation } from '@/hooks/use-keyboard-navigation'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [expandedSections, setExpandedSections] = useState<string[]>([])
   const navRef = useKeyboardNavigation()
+  
+  const toggleSection = (section: string) => {
+    setExpandedSections(prev => 
+      prev.includes(section) 
+        ? prev.filter(s => s !== section) 
+        : [...prev, section]
+    )
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -255,48 +264,65 @@ export function Header() {
               
               {/* Mobile Programs Submenu */}
               <div className="space-y-1">
-                <div className="text-foreground px-3 py-2 font-medium">Programs</div>
-                <div className="pl-6 space-y-1">
-                  <a 
-                    href="/programs/infants" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
+                <button 
+                  className="flex items-center justify-between w-full text-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  onClick={() => toggleSection('programs')}
+                  aria-expanded={expandedSections.includes('programs')}
+                  aria-controls="programs-dropdown"
+                >
+                  <span className="font-medium">Programs</span>
+                  <svg 
+                    className={`h-4 w-4 transition-transform ${expandedSections.includes('programs') ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
                   >
-                    Infants (6 weeks - 18 months)
-                  </a>
-                  <a 
-                    href="/programs/toddlers" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Toddlers (18 months - 3 years)
-                  </a>
-                  <a 
-                    href="/programs/preschool" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Preschool (3 - 4 years)
-                  </a>
-                  <a 
-                    href="/programs/pre-k" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Pre-K (4 - 5 years)
-                  </a>
-                  <div className="border-t border-border my-2"></div>
-                  <a 
-                    href="/programs" 
-                    className="block text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 bg-muted/50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="flex items-center justify-between">
-                      <span className="font-semibold">View All Programs</span>
-                      <span className="ml-1 font-bold">→</span>
-                    </span>
-                  </a>
-                </div>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {expandedSections.includes('programs') && (
+                  <div id="programs-dropdown" className="pl-6 space-y-1">
+                    <a 
+                      href="/programs/infants" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Infants (6 weeks - 18 months)
+                    </a>
+                    <a 
+                      href="/programs/toddlers" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Toddlers (18 months - 3 years)
+                    </a>
+                    <a 
+                      href="/programs/preschool" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Preschool (3 - 4 years)
+                    </a>
+                    <a 
+                      href="/programs/pre-k" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Pre-K (4 - 5 years)
+                    </a>
+                    <div className="border-t border-border my-2"></div>
+                    <a 
+                      href="/programs" 
+                      className="block text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 bg-muted/50"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="flex items-center justify-between">
+                        <span className="font-semibold">View All Programs</span>
+                        <span className="ml-1 font-bold">→</span>
+                      </span>
+                    </a>
+                  </div>
+                )}
               </div>
               
               <a 
@@ -309,30 +335,47 @@ export function Header() {
               
               {/* Mobile Admissions Submenu */}
               <div className="space-y-1">
-                <div className="text-foreground px-3 py-2 font-medium">Admissions</div>
-                <div className="pl-6 space-y-1">
-                  <a 
-                    href="/admissions#enrollment-process" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
+                <button 
+                  className="flex items-center justify-between w-full text-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  onClick={() => toggleSection('admissions')}
+                  aria-expanded={expandedSections.includes('admissions')}
+                  aria-controls="admissions-dropdown"
+                >
+                  <span className="font-medium">Admissions</span>
+                  <svg 
+                    className={`h-4 w-4 transition-transform ${expandedSections.includes('admissions') ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
                   >
-                    Enrollment Process
-                  </a>
-                  <a 
-                    href="/admissions#tuition-rates" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Pricing & Fees
-                  </a>
-                  <a 
-                    href="/admissions#required-documents" 
-                    className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Forms & Documents
-                  </a>
-                </div>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {expandedSections.includes('admissions') && (
+                  <div id="admissions-dropdown" className="pl-6 space-y-1">
+                    <a 
+                      href="/admissions#enrollment-process" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Enrollment Process
+                    </a>
+                    <a 
+                      href="/admissions#tuition-rates" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Pricing & Fees
+                    </a>
+                    <a 
+                      href="/admissions#required-documents" 
+                      className="block text-muted-foreground hover:text-primary hover:bg-muted transition-colors px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Forms & Documents
+                    </a>
+                  </div>
+                )}
               </div>
               
               <a 

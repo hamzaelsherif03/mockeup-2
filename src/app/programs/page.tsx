@@ -313,12 +313,12 @@ export default function ProgramsPage() {
       })}
 
       {/* Call to Action */}
-      <section className="nursery-section bg-primary text-primary-foreground">
+      <section className="nursery-section bg-[#f5f0e8] text-[#8B5A2B]">
         <div className="nursery-container text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
             Find the Perfect Program for Your Child
           </h2>
-          <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
             Not sure which program is right for your child? Our experienced staff can help 
             you choose the best fit based on your child's age, development, and unique needs.
           </p>
@@ -326,6 +326,7 @@ export default function ProgramsPage() {
             <Button 
               size="lg" 
               variant="secondary"
+              className="bg-[#a67c52] text-[#f5f0e8] hover:bg-[#8B5A2B]"
               onClick={triggerPopup}
             >
               Get Personalized Guidance
@@ -333,7 +334,7 @@ export default function ProgramsPage() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="bg-transparent border-[#8B5A2B] text-[#8B5A2B] hover:bg-[#8B5A2B] hover:text-[#f5f0e8]"
               onClick={() => {
                 alert('Schedule a tour to see our programs in action! Call (555) 123-4567')
               }}
